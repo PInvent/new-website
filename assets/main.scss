@@ -30,3 +30,13 @@
 .center {
     text-align: center;
 }
+
+.icon-container{
+    display: flex;
+    align-content: flex-start;
+}
+
+.icon-container i{
+    font-size: 150%;
+    padding: 0px 12px;
+}

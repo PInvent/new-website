@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Projects
-background: '/img/bg-post.jpg'
+description: What we have done so far
+background: '/img/bg-projects.jpg'
 ---
 
 {% for post in paginator.posts %}
@@ -35,14 +36,72 @@ background: '/img/bg-post.jpg'
 <div class="clearfix">
 
   {% if paginator.previous_page %}
-  <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+  <a class="btn btn-primary float-left"
+    href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
     Newer<span class="d-none d-md-inline"> Posts</span></a>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span class="d-none d-md-inline"> Posts</span> &rarr;</a>
+  <a class="btn btn-primary float-right"
+    href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span
+      class="d-none d-md-inline"> Posts</span> &rarr;</a>
   {% endif %}
 
 </div>
 
 {% endif %}
+
+
+<div>
+  <!-- <div class="col-lg-4 col-md-12"> -->
+  <div class="icon-container">
+    <i class="fas fa-charging-station"></i>
+    <h3>Electronics</h3>
+  </div>
+  <p>Heart beat monitoring system</p>
+  <p>Car blindspot detection system</p>
+  <p>Automatic trolley followers</p>
+  <p>Temperature controller system</p>
+  <p>House security alarm system</p>
+  <p>Object follower robot</p>
+  <p>Traffic light system using labView</p>
+  <p>Ultrasonic measurement device</p>
+  <p>RFID attendance system</p>
+  <!-- </div>
+  <div class="col-lg-4 col-md-12"> -->
+  <div class="icon-container">
+    <i class="fas fa-sim-card"></i>
+    <h3>IoT</h3>
+  </div>
+  <p>Motorcycle tracker and anti-theft device</p>
+  <p>Vending machine monitoring system</p>
+  <p>Lawn mower (controlled by apps)</p>
+  <p>Fall detector for elder</p>
+  <p>Smart fertigation system</p>
+  <p>Smart aquarium</p>
+  <p>Smart bus monitoring system</p>
+  <p>Water quality monitoring system</p>
+  <p>Automatic dryer system</p>
+  <p>GPS tracker system</p>
+  <p>Cascaded temperature monitoring system</p>
+  <p>Smart home</p>
+  <p>Smart lighting system</p>
+  <p>Vertical farming</p>
+  <p>Hydroponic system</p>
+  <p>Humidity and temperature monitoring</p>
+  <p>Smart parking system</p>
+  <!-- </div>
+  <div class="col-lg-4 col-md-12"> -->
+  <div class="icon-container">
+    <i class="fas fa-magic"></i>
+    <h3>Image processing</h3>
+  </div>
+  <p>360 degree smart parking system</p>
+  <p>Pedestrian detection</p>
+  <p>Facial recognition system</p>
+  <p>Speed trap system</p>
+  <p>Barcode scanner system</p>
+  <p>Smart elevator system</p>
+  <p>Car detection</p>
+  <!-- </div> -->
+</div>
